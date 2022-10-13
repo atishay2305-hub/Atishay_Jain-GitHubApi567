@@ -1,5 +1,5 @@
 from unittest import TestCase
-import unitest
+import unittest
 
 from githubAPI567_Atishay import Github
 

@@ -9,10 +9,11 @@ jobs:
       - image: cimg/python:3.10.2
     steps:
       - checkout
-      - -python/install-packages:
+      - python/install-packages:
           pkg-manager: pip
           args: pytest
       - run: 
+          name: Run the test  
           command: |
             pip install requests
             pytest --junitxml=test-results/junit.xml githubAPI_test.py
